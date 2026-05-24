@@ -1,0 +1,207 @@
+﻿question_code,sub_code,question_text,answer_text,answer_code
+Wave,,Năm thực hiện PV,,
+Region,,Khu vực thực hiện PV,,
+D2,,Giới tính,,
+D3,,Độ tuổi,,
+D4,,Thu nhập hộ gia đình,,
+S2,,Những loại sản phẩm nào bạn đã uống trong 4 tuần qua?,,
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],,
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],Hằng ngày,1
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],Once per day,
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],4-6 lần mỗi tuần,2
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],4-6 times/week,
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],2-3 lần mỗi tuần,3
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],2-3 times/week,
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],Một lần một tuần,4
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],Once per week,
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],2-3 lần một tháng,5
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],2-3 times/month,
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],Mỗi tháng một lần,6
+S3b,,Bạn uống trà uống liền (đóng chai/lon/hộp) với mức độ thường xuyên như thế nào trong 4 tuần qua? [SA],Once per month,
+Q1.TOM,TOM,"Khi nhắc đến trà uống liền (đóng chai/lon/hộp), những nhãn hiệu nào mà bạn biết đến? (SA) - NH đầu tiên",,
+Q1.TotalSpontaneous,Spontaneous,"Khi nhắc đến trà uống liền (đóng chai/lon/hộp), những nhãn hiệu nào mà bạn biết đến? (MA) - các NH tiếp theo",,
+Q1Q2. Total aided awareness,Total Awareness,Vui lòng chọn tất cả những nhãn hiệu trà uống liền nào sau đây bạn biết đến? (MA) - Nhận biết có gợi ý,,
+Q3,P3M Usage,Những nhãn hiệu trà uống liền nào mà bạn đã sử dụng trong 3 tháng qua? (MA),,
+Q4,P4W Usage,Những nhãn hiệu trà uống liền nào mà bạn đã sử dụng trong 4 tuần qua? (MA),,
+Q5,BUMO,Nhãn hiệu trà uống liền nào bạn đã sử dụng thường xuyên nhất trong 4 tuần qua?,,
+Q6,Usage frequency,Mức độ sử dụng thường xuyên của từng nhãn hiệu trà uống liền mà bạn có uống trong 4 tuần qua?,,
+Q7,Previous BUMO,Nhãn hiệu trà uống liền bạn đã sử dụng thường xuyên nhất trước khi dùng [insert brand text in Q5]?,,
+Q4Q8,Consideration set,Nhãn hiệu cân nhắc,,
+QI,Imagery,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",,
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Những thương hiệu được ưa chuộng và phổ biến,R1
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Bao bì có thiết kế thu hút,R2
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Nhãn hiệu đáng tin cậy,R3
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Giá cả hợp lý với chất lượng mang lại,R4
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Phù hợp để thưởng thức hàng ngày,R5
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Làm dịu cơn khát,R6
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Vị ngon mà tôi yêu thích,R7
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)","Thương hiệu mang tính hiện đại, trẻ trung",R8
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Sản xuất từ nguyên liệu tự nhiên,R10
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Mang đến sự vui tươi và lạc quan,R14
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Có lợi cho sức khỏe,R15
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Giúp giảm căng thẳng và mệt mỏi,R17
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Mang lại cảm giác thư giãn,R18
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Giải nhiệt cuộc sống,R20
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Tạo cảm giác sảng khoái,R21
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Tái tạo năng lượng,R25
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Có nhiều vị để lựa chọn,R27
+QI,,"Bạn hãy đọc kỹ nhận định bên dưới, và chọn tất cả những nhãn hiệu bạn thấy phù hợp (hoặc chọn Không có nếu không có nhãn hiệu nào phù hợp)",Mang đến cảm giác tươi mát,R24
+Q.ME2,Barrier to consider,"Trong số những lý do bên dưới, lý do nào khiến bạn không cân nhắc mua nhãn hiệu.....",,
+Q.ME2,,C2,Không thích vị/ hương vị không ngon,1
+Q.ME2,,Không độ,Do not like the flavor/The flavor do not taste good,
+Q.ME2,,Olong Tea Plus,Không tốt/ không có lợi cho sức khỏe,2
+Q.ME2,,Dr. Thanh,Unhealthy,
+Q.ME2,,Wonderfarm,Không tin tưởng vào chất lượng sản phẩm,3
+Q.ME2,,Trà Hạt Chia Fuze Tea+,Do not trust in product quality,
+Q.ME2,,Trà sữa không độ/ Trà sữa Macchiato,Giá mắc hơn mức tôi muốn mua,4
+Q.ME2,,Trà sữa C2,Expensive than I expected,
+Q.ME2,,Trà sữa ít đường Vinamilk Happy Milktea (3000),Giá quá rẻ,5
+Q.ME2,,Trà mật ong Boncha,Too cheap,
+Q.ME2,,Trà mật ong Boncha,Không có hương vị mà tôi thích,6
+Q.ME2,,Trà mật ong Boncha,Does not have the flavors that I like,
+Q.ME2,,Trà mật ong Boncha,Không có loại bao bì tôi cần (lon/chai) (ghi rõ ….),7
+Q.ME2,,Trà mật ong Boncha,Does not have a packaging that I need (specify: ….),
+Q.ME2,,Trà mật ong Boncha,Có chứa nhiều đường hơn mức tôi cần,8
+Q.ME2,,Trà mật ong Boncha,Has higher sugar than I needed,
+Q.ME2,,Trà mật ong Boncha,Thường không có khuyến mãi trong khi nhãn hiệu khác có,9
+Q.ME2,,Trà mật ong Boncha,Usually do not have sale promotion while other brands have,
+Q.ME2,,Trà mật ong Boncha,Không thích người khác thấy tôi uống/mua nhãn hiệu này,10
+Q.ME2,,Trà mật ong Boncha,Do not want other people see when I drink/buy this brand,
+Q.ME2,,Trà mật ong Boncha,Nhãn hiệu không nổi tiếng/ ít người uống,11
+Q.ME2,,Trà mật ong Boncha,Unpopular brands,
+Q.ME2,,Trà mật ong Boncha,Không thích kiểu thiết kế bao bì hiện tại,12
+Q.ME2,,Trà mật ong Boncha,Do not like recent packaging designs,
+Q.ME2,,Trà mật ong Boncha,"Không sang trọng, cao cấp như tôi cần",13
+Q.ME2,,Trà mật ong Boncha,"Does not elegant, premium",
+Q.ME2,,Trà mật ong Boncha,Hỏi mua nhưng không có bán ở cửa hàng,14
+Q.ME2,,Trà mật ong Boncha,Asked but the store does not sell it,
+Q.ME2,,Trà mật ong Boncha,Thường không có ướp lạnh sẵn ở cửa hàng,15
+Q.ME2,,Trà mật ong Boncha,Not preserved in cool place,
+Q.ME2,,Trà mật ong Boncha,"Nguyên nhân khác, (ghi rõ:………)",97
+Q.ME2,,Trà mật ong Boncha,Others: (Specify:….),
+Q.TP1,MEDIA CHANNEL,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Quảng cáo trên Tivi (Quảng cáo, tài trợ gameshow/truyền hình thực tế)",1
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Advertising on TV,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Quảng cáo trên mạng internet (trang mạng, Facebook, Youtube,..)",2
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Advertising on Internet (website, Facebook, YouTube, etc)",
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Bảng quảng cáo ngoài trời (2 bên đường, ở trên các tòa nhà)",4
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Outdoor billboard (2 side of the streets, on the building)",
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Quảng cáo dán trên các phương tiện giao thông (xe buýt, xe ôtô)",5
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Transportation display (bus, car wrap)",
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Quảng cáo trên màn hình LCD/khung quảng cáo điện tử trong các tòa nhà,6
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Advertising on the LCD/ad frame in the office building,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Sự kiện tài trợ cho các hoạt động/ lễ hội ngoài trời của nhãn hiệu,7
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Events/ Activations,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Sản phẩm trưng bày tại các cửa hàng, siêu thị,…",8
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Product display in stores, supermarket, …",
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Áp phích tại cửa hàng,9
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Poster in stores,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Quảng cáo trên bảng hiệu/ hộp đèn tại quán/ cửa hàng,10
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Khuyến mãi ở các cửa hàng, siêu thị,…",11
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Promotion in stores, supermarket, …",
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Được giới thiệu từ nhân viên tiếp thị/PG,12
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Marketing staff/ PG,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Được giới thiệu từ người bán,13
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Recommended by seller,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Được giới thiệu từ bạn bè/người thân,14
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Recommended by friends/relatives,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Thấy người khác sử dụng,15
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Seeing others use,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Nhận được sản phẩm mẫu/ dùng thử miễn phí,16
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Sampling/ Free sample trial,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Quảng cáo trên báo/ tạp chí,17
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]","Advertising on Newspaper, magazines",
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Quảng cáo trên radio,18
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Advertising on radio,
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",Không có hoạt động nào ở trên,99
+Q.TP1,,"Trong 3 tháng vừa qua, bạn thấy nhãn hiệu bên dưới qua những kênh nào? [MA]",None of these,
+Q.TP2,PURCHASED CHANNEL,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",,
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Siêu thị,1
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Supermarket,
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Cửa hàng tạp hoá,2
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Grocery Shop,
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Cửa hàng tiện lợi,4
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Convienient store,
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Chợ,5
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Market,
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Quán cà phê/quán nước bên đường,6
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Coffee shop/ Beverage street vendor,
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Quán ăn/nhà hàng,7
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Eatery place/restaurant,
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Căn-tin,8
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Carteen,
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Các trang web bán hàng online,9
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",E-commerce website,
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Quầy bán hàng tự động,10
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Vending machine,
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]","Khác, ghi rõ: …………….",97
+Q.TP2,,"Với những nhãn hiệu dưới đây, lần mua gần đây nhất của bạn là ở đâu? [SA]",Other (specify): …………….,
+Q.TP3,OCCASION,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],,
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],Khi đi ngoài trời nắng,1
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],When outside,
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],Khi đi chơi/dã ngoại cùng bạn bè/gia đình,2
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],When hanging out with friends/family,
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],Khi tụ tập ăn uống/ăn tiệc cùng bạn bè/gia đình,4
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],When having meals/party with friends/family,
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],Khi nghỉ giải lao sau giờ học/làm việc,5
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],When taking a break after school/work,
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],Khi đang ăn,6
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],When having meals,
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],"Khi đang thư giãn/giải trí tại nhà (nghe nhạc, xem phim, xem TV,…)",7
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],"When entertaining at home (Listen to music, watch movie, watch TV,…)",
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],"Khi đi xem phim/nghe nhạc kịch,…",8
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],When watch movie/ attend music concert,
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],Sau khi tham gia hoạt động thể thao/ ngoại khóa,9
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],After doing sport,
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],Sau khi uống rượu bia/,10
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],After consuming beer/ alcohol,
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],"Khác, ghi rõ: …………….",97
+Q.TP3,,Bạn uống những nhãn hiệu sau trong thời gian gần đây nhất là vào dịp nào? [SA],Other (specify): …………….,
+D6,OCCUPATION,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Chủ công ty/doanh nghiệp lớn,1
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Owner (large business),
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Chủ cửa hàng/chủ cơ sở kinh doanh nhỏ (có đóng thuế và có cơ sở làm việc/ kinh doanh cố định),2
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Owner (small busisness),
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Công chức nhà nước (nói chung),3
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Public sector office worker,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,"Công việc chuyên môn (bác sĩ, kỹ sư, giáo viên, luật sư ...)",4
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Professional,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Nhân viên văn phòng (cấp quản lý),5
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,White Collar (Managerial level and above),
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Nhân viên văn phòng (cấp nhân viên),6
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,White Collar (Junior level),
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,"Công nhân cấp nhân viên (làm ở nhà máy/ xí nghiệp/ công ty sản xuất, v.v.)",7
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Blue Collar/ Worker,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,"Ngành nghề chuyên môn cao (trưởng nhóm vận hành, giám sát, kỹ thuật viên, thợ cơ khí, thợ điện lạnh, thợ điện, v.v)",13
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Technician,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Lao động tự do (VD: chạy Grab/thợ chụp hình/ xe ôm/ tài xế/ khuân vác/ thợ làm móng/ thợ cắt tóc/ thợ may/ giữ trẻ….),8
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Peddle/ Freelancer,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Không đi làm/ Thất nghiệp,9
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Unemployed,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,"Nội trợ toàn thời gian (chỉ ở nhà dọn dẹp nhà cửa, nấu ăn, v.v )",10
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Housewife,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Sinh viên / học sinh,11
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Student/ Pupil,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Nghỉ hưu,12
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Retire,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Làm ruộng/ làm rẫy/ chăn nuôi/ ngư dân,14
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Agricultural/ farmer,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Bộ đội/ Dân phòng,15
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Soldier/ Civil defence,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Nhân viên bán hàng (có hợp đồng với công ty),16
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Salesperson,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,"Lao động phổ thông (thợ may/ làm tóc/ thợ hồ/ người giúp việc/ tạp vụ/ nhân viên spa/ nhân viên bán quần áo, v.v.)",17
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Unskilled labor,
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,Khác (nêu rõ……..),97
+D6,,Nghề nghiệp/chức vụ hiện nay của bạn là gì?,"Other, specify: ……….",
+D7,EDUCATION,Trình độ học vấn cao nhất của bạn?,,
+D7,,Trình độ học vấn cao nhất của bạn?,Đang học/ tốt nghiệp chương trình cấp 1,1
+D7,,Trình độ học vấn cao nhất của bạn?,Studying/Graduated from primary school,
+D7,,Trình độ học vấn cao nhất của bạn?,Đang học/ tốt nghiệp chương trình cấp 2,2
+D7,,Trình độ học vấn cao nhất của bạn?,Studying/Graduated from secondary school,
+D7,,Trình độ học vấn cao nhất của bạn?,Đang học/ tốt nghiệp chương trình cấp 3,3
+D7,,Trình độ học vấn cao nhất của bạn?,Studying/Graduated from high school,
+D7,,Trình độ học vấn cao nhất của bạn?,Đang học/ tốt nghiệp các trường đại học/ cao đẳng và các trường dạy nghề,4
+D7,,Trình độ học vấn cao nhất của bạn?,Studying/Graduated from university/college and vocational school,
+D7,,Trình độ học vấn cao nhất của bạn?,Không đi học,5
+D7,,Trình độ học vấn cao nhất của bạn?,Not going to school,
