@@ -10,7 +10,6 @@ def _apply_cozy_theme(fig: go.Figure) -> go.Figure:
         plot_bgcolor="rgba(0,0,0,0)",
         paper_bgcolor="rgba(0,0,0,0)",
         font=dict(color="#1b2e22", family="sans-serif"),
-        title_font=dict(color="#156835", size=15, family="sans-serif"),
         legend=dict(
             font=dict(color="#1b2e22", size=10),
             title=dict(font=dict(color="#1b2e22")),
@@ -23,13 +22,11 @@ def _apply_cozy_theme(fig: go.Figure) -> go.Figure:
         ),
     )
     fig.update_xaxes(
-        title_font=dict(color="#1b2e22", size=11),
         tickfont=dict(color="#4e6556", size=10),
         gridcolor="rgba(21, 104, 53, 0.08)",
         zerolinecolor="rgba(21, 104, 53, 0.12)",
     )
     fig.update_yaxes(
-        title_font=dict(color="#1b2e22", size=11),
         tickfont=dict(color="#4e6556", size=10),
         gridcolor="rgba(21, 104, 53, 0.08)",
         zerolinecolor="rgba(21, 104, 53, 0.12)",
@@ -86,14 +83,14 @@ def render_tab1(df: pd.DataFrame) -> None:
         fig_region = go.Figure()
         fig_region.add_trace(go.Bar(
             x=region_cross.index, y=region_cross[2024],
-            name="2024", marker_color="#3b903e", text=region_cross[2024], textposition="outside"
+            name="2024", marker_color="#b0b0b0", text=region_cross[2024], textposition="outside"
         ))
         fig_region.add_trace(go.Bar(
             x=region_cross.index, y=region_cross[2025],
             name="2025", marker_color="#156835", text=region_cross[2025], textposition="outside"
         ))
         fig_region.update_layout(
-            title="Khu vực Địa lý phỏng vấn (Region)",
+            title=dict(text="Khu vực Địa lý phỏng vấn (Region)", font=dict(color="#156835", size=14, family="sans-serif")),
             xaxis_title="",
             yaxis_title="Số lượng đáp viên (n)",
             height=320,
@@ -109,14 +106,14 @@ def render_tab1(df: pd.DataFrame) -> None:
         fig_gender = go.Figure()
         fig_gender.add_trace(go.Bar(
             x=gender_cross.index, y=gender_cross[2024],
-            name="2024", marker_color="#3b903e", text=gender_cross[2024], textposition="outside"
+            name="2024", marker_color="#b0b0b0", text=gender_cross[2024], textposition="outside"
         ))
         fig_gender.add_trace(go.Bar(
             x=gender_cross.index, y=gender_cross[2025],
             name="2025", marker_color="#156835", text=gender_cross[2025], textposition="outside"
         ))
         fig_gender.update_layout(
-            title="D2. Giới tính đáp viên (Gender)",
+            title=dict(text="Giới tính đáp viên (Gender)", font=dict(color="#156835", size=14, family="sans-serif")),
             xaxis_title="",
             yaxis_title="Số lượng đáp viên (n)",
             height=320,
@@ -132,14 +129,14 @@ def render_tab1(df: pd.DataFrame) -> None:
         fig_age = go.Figure()
         fig_age.add_trace(go.Bar(
             x=age_cross.index, y=age_cross[2024],
-            name="2024", marker_color="#3b903e", text=age_cross[2024], textposition="outside"
+            name="2024", marker_color="#b0b0b0", text=age_cross[2024], textposition="outside"
         ))
         fig_age.add_trace(go.Bar(
             x=age_cross.index, y=age_cross[2025],
             name="2025", marker_color="#156835", text=age_cross[2025], textposition="outside"
         ))
         fig_age.update_layout(
-            title="D3. Nhóm tuổi đáp viên (Age group)",
+            title=dict(text="Nhóm tuổi đáp viên (Age group)", font=dict(color="#156835", size=14, family="sans-serif")),
             xaxis_title="",
             yaxis_title="Số lượng đáp viên (n)",
             height=320,
@@ -168,14 +165,14 @@ def render_tab1(df: pd.DataFrame) -> None:
         fig_income = go.Figure()
         fig_income.add_trace(go.Bar(
             y=income_cross.index, x=income_cross[2024],
-            name="2024", orientation='h', marker_color="#3b903e", text=income_cross[2024], textposition="outside"
+            name="2024", orientation='h', marker_color="#b0b0b0", text=income_cross[2024], textposition="outside"
         ))
         fig_income.add_trace(go.Bar(
             y=income_cross.index, x=income_cross[2025],
             name="2025", orientation='h', marker_color="#156835", text=income_cross[2025], textposition="outside"
         ))
         fig_income.update_layout(
-            title="D4. Thu nhập hộ gia đình hàng tháng (Income)",
+            title=dict(text="Thu nhập hộ gia đình hàng tháng (Income)", font=dict(color="#156835", size=14, family="sans-serif")),
             xaxis_title="Số lượng đáp viên (n)",
             yaxis_title="",
             height=340,
@@ -192,32 +189,87 @@ def render_tab1(df: pd.DataFrame) -> None:
             labels=[f"Năm {w}" for w in wave_counts.index],
             values=wave_counts.values,
             hole=0.55,
-            marker=dict(colors=["#156835", "#3b903e"]),
+            marker=dict(colors=["#156835", "#b0b0b0"]),
             textinfo="value+percent",
             hovertemplate="<b>%{label}</b><br>Cỡ mẫu: %{value:,} người (%{percent})<extra></extra>"
         )])
         fig_wave.update_layout(
-            title="Quy mô mẫu theo năm thực hiện (Wave)",
+            title=dict(text="Quy mô mẫu theo năm thực hiện (Wave)", font=dict(color="#156835", size=14, family="sans-serif")),
             height=340,
             margin=dict(l=10, r=10, t=55, b=10),
             legend=dict(orientation="h", y=1.12, x=0)
         )
         st.plotly_chart(_apply_cozy_theme(fig_wave), use_container_width=True, config={"displayModeBar": False})
 
-    # ===== 5. TẤM THẺ ĐÚC KẾT CHIẾN LƯỢC (Insight Card) =====
-    st.markdown(
-        """
-        <div class="insight-card">
-            <div class="insight-title">🧠 NHẬN ĐỊNH CHUYÊN SÂU CỦA SENIOR DATA ANALYST:</div>
-            <div class="insight-main">
-                <ul>
-                    <li><strong>Quy mô mẫu đồng đều tuyệt đối:</strong> Nghiên cứu đạt sự cân bằng hoàn hảo về thời gian với chính xác <strong>1,300 đáp viên mỗi năm</strong> (tổng N = 2,600). Điều này triệt tiêu mọi sai số về mặt thời điểm.</li>
-                    <li><strong>Đại diện chân thực thị trường FMCG:</strong> Khảo sát ghi nhận tỷ lệ <strong>Nữ giới chiếm ưu thế (61.2%)</strong>. Đây là thiết kế mẫu cực kỳ chuẩn xác vì phụ nữ là nhóm đối tượng đưa ra quyết định mua sắm tiêu dùng nhanh và đồ uống cho cả gia đình.</li>
-                    <li><strong>Định vị phân khúc trung lưu năng động:</strong> Tệp đáp viên tập trung mạnh nhất ở nhóm tuổi lao động vàng từ <strong>19 - 34 tuổi (71.0%)</strong> và có thu nhập hộ gia đình từ <strong>7.5 - 30 triệu VND (87.6%)</strong>. Đây chính là tệp khách hàng có tần suất tiêu thụ trà đóng chai cao nhất, sẵn sàng chi trả cho các sản phẩm trà trái cây thơm ngon, thời thượng.</li>
-                    <li><strong>Lưu ý trọng số địa lý:</strong> Miền Bắc chiếm tỷ trọng mẫu lớn nhất (46.2%). Do Cozy có thế mạnh gốc Bắc, trong khi miền Nam ưa chuộng C2/Tea Plus, khi đọc các chỉ số sức khỏe thương hiệu tổng hợp cần lưu ý yếu tố vùng miền này để tránh ngộ nhận.</li>
-                </ul>
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    st.divider()
+
+    # ===== 5. BIỂU ĐỒ HÀNG 3: BỔ SUNG CÁC TIÊU CHÍ MỚI (TẦN SUẤT S3B, NGHỀ NGHIỆP, HỌC VẤN) =====
+    st.markdown("<h3 style='color: #156835; font-size: 1.25rem; margin-top: 10px; margin-bottom: 20px;'>Hành vi sử dụng nền và Thông tin nhân khẩu bổ sung</h3>", unsafe_allow_html=True)
+    col3_1, col3_2, col3_3 = st.columns(3)
+
+    with col3_1:
+        # S3b Frequency Analysis
+        s3b_col = [c for c in df.columns if 'S3b' in c][0]
+        s3b_counts = df[s3b_col].value_counts()
+        freq_order = ['Once per day', '4-6 times/ week', '2-3 times/week', 'Once per week', '2-3 times/month', 'Once per month']
+        s3b_counts = s3b_counts.reindex([f for f in freq_order if f in s3b_counts.index])
+
+        fig_s3b = go.Figure(data=[go.Pie(
+            labels=s3b_counts.index,
+            values=s3b_counts.values,
+            hole=0.45,
+            marker=dict(colors=["#156835", "#227d43", "#3a9357", "#5cb278", "#88cca1", "#bcecd0"]),
+            textinfo="percent",
+            hovertemplate="<b>%{label}</b><br>Số lượng: %{value:,} (%{percent})<extra></extra>"
+        )])
+        fig_s3b.update_layout(
+            title=dict(text="Tần suất uống Trà RTD trong 4 tuần", font=dict(color="#156835", size=14, family="sans-serif")),
+            height=320,
+            margin=dict(l=10, r=10, t=55, b=10),
+            legend=dict(orientation="h", y=-0.15, x=0)
+        )
+        st.plotly_chart(_apply_cozy_theme(fig_s3b), use_container_width=True, config={"displayModeBar": False})
+
+    with col3_2:
+        # Occupation Analysis
+        occ_counts = df['occupation'].value_counts().head(7).sort_values(ascending=True)
+        clean_labels = [o.split('. ')[-1] if '. ' in o else o for o in occ_counts.index]
+
+        fig_occ = go.Figure(go.Bar(
+            y=clean_labels,
+            x=occ_counts.values,
+            orientation='h',
+            marker_color="#156835",
+            text=[f"{v:,}" for v in occ_counts.values],
+            textposition="outside",
+            hovertemplate="<b>%{y}</b>: %{x:,} người<extra></extra>"
+        ))
+        fig_occ.update_layout(
+            title=dict(text="Cơ cấu Nghề nghiệp đáp viên (Top 7)", font=dict(color="#156835", size=14, family="sans-serif")),
+            xaxis_title="Số lượng đáp viên (người)",
+            height=320,
+            margin=dict(l=10, r=10, t=55, b=10)
+        )
+        st.plotly_chart(_apply_cozy_theme(fig_occ), use_container_width=True, config={"displayModeBar": False})
+
+    with col3_3:
+        # Education Analysis
+        edu_counts = df['education'].value_counts().sort_values(ascending=True)
+        clean_edu = [e.replace('Studying/Graduated from ', '').split(' and ')[0] for e in edu_counts.index]
+
+        fig_edu = go.Figure(go.Bar(
+            y=clean_edu,
+            x=edu_counts.values,
+            orientation='h',
+            marker_color="#3b903e",
+            text=[f"{v:,}" for v in edu_counts.values],
+            textposition="outside",
+            hovertemplate="<b>%{y}</b>: %{x:,} người<extra></extra>"
+        ))
+        fig_edu.update_layout(
+            title=dict(text="Trình độ Học vấn của đáp viên", font=dict(color="#156835", size=14, family="sans-serif")),
+            xaxis_title="Số lượng đáp viên (người)",
+            height=320,
+            margin=dict(l=10, r=10, t=55, b=10)
+        )
+        st.plotly_chart(_apply_cozy_theme(fig_edu), use_container_width=True, config={"displayModeBar": False})

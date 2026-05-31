@@ -6,12 +6,14 @@ from typing import Iterable
 import streamlit as st
 import pandas as pd
 
-# Import các tab phân tích tương ứng
-from tab1 import render_tab1
-from tab2 import render_tab2
-from tab3 import render_tab3
-from tab4 import render_tab4
-from tab5 import render_tab5
+# Import các tab phân tích tương ứng từ src/pages
+from src.pages.overview import render_overview
+from src.pages.tab1 import render_tab1
+from src.pages.tab2 import render_tab2
+from src.pages.tab3 import render_tab3
+from src.pages.tab4 import render_tab4
+from src.pages.tab5 import render_tab5
+from src.pages.tab6 import render_tab6
 
 # Cấu hình trang Streamlit
 st.set_page_config(
@@ -31,33 +33,45 @@ class QuestionGroup:
 # Định nghĩa 5 nhóm chuyên đề đúng theo cấu trúc và câu hỏi đề bài
 GROUPS: tuple[QuestionGroup, ...] = (
     QuestionGroup(
-        title="Nhân khẩu học đáp viên",
-        subtitle="Khám phá chân dung, bối cảnh địa lý, độ tuổi, giới tính và thu nhập của 2,600 đáp viên thực hiện khảo sát.",
-        question="QNR D1-D4: Chân dung nhân khẩu học của đối tượng tiêu dùng Trà đóng chai (RTD Tea)?",
-        placeholder_charts=("Vùng địa lý", "Cơ cấu giới tính", "Độ tuổi & Thu nhập"),
+        title="Tổng quan dự án",
+        subtitle="Báo cáo sức khỏe thương hiệu Cozy Wave 2025 — Tóm tắt các chỉ số cốt lõi từ Nhận biết, Sử dụng, Phễu chuyển đổi đến Liên tưởng hình ảnh và Rào cản sản phẩm.",
+        question="Tổng quan sức khỏe thương hiệu Trà Cozy đóng chai năm 2025",
+        placeholder_charts=("Chỉ số KPI", "Phễu thương hiệu", "Xu hướng & Rào cản"),
+    ),
+    QuestionGroup(
+        title="Nhân khẩu học & Tần suất",
+        subtitle="Khám phá chân dung, bối cảnh địa lý, độ tuổi, giới tính, thu nhập, nghề nghiệp, học vấn và tần suất uống trà đóng chai của 2,600 đáp viên.",
+        question="Chân dung nhân khẩu học và hành vi sử dụng nền của khách hàng RTD Tea",
+        placeholder_charts=("Vùng địa lý & Giới tính", "Độ tuổi & Thu nhập", "Tần suất, Nghề nghiệp & Học vấn"),
     ),
     QuestionGroup(
         title="Hành vi & Sức khỏe thương hiệu",
         subtitle="Khám phá kim tự tháp nhận biết, mức độ thâm nhập và phễu chuyển đổi thương hiệu từ Nhận biết đến Trung thành.",
-        question="Q1-Q5: Sức khỏe thương hiệu Trà Cozy đóng chai đang đứng ở vị trí nào so với các đối thủ cạnh tranh?",
+        question="Sức khỏe thương hiệu Trà Cozy đóng chai đang đứng ở vị trí nào so với các đối thủ cạnh tranh?",
         placeholder_charts=("Nhận biết thương hiệu", "Thâm nhập thị trường", "Phễu chuyển đổi"),
     ),
     QuestionGroup(
         title="Định vị hình ảnh thương hiệu",
         subtitle="Đánh giá mức độ liên tưởng của người tiêu dùng đối với 18 thuộc tính hình ảnh đặc trưng lý tính và cảm tính.",
-        question="QI. Imagery: Trà Cozy đóng chai gắn liền với những liên tưởng hình ảnh thế mạnh nào?",
+        question="Trà Cozy đóng chai gắn liền với những liên tưởng hình ảnh thế mạnh nào?",
         placeholder_charts=("Bản đồ nhiệt liên tưởng", "So sánh thuộc tính đơn", ""),
+    ),
+    QuestionGroup(
+        title="Dịp tiêu dùng & Kênh mua",
+        subtitle="Phân tích sâu các dịp uống trà RTD, địa điểm mua sắm gần đây nhất và các kênh tiếp cận quảng cáo của khách hàng.",
+        question="Khách hàng thường uống trà đóng chai vào dịp nào, mua ở đâu và chạm thương hiệu qua kênh nào?",
+        placeholder_charts=("Dịp tiêu dùng", "Kênh mua sắm", "Điểm chạm truyền thông"),
     ),
     QuestionGroup(
         title="Phân tích sản phẩm & Rào cản",
         subtitle="Định vị nguồn gốc khách hàng chuyển dịch và vạch trần top 10 rào cản ngăn cản việc cân nhắc mua Cozy.",
-        question="Q7 & Q.ME2: Lý do cốt lõi nào khiến khách hàng chưa đưa Cozy vào danh mục cân nhắc mua sắm?",
+        question="Lý do cốt lõi nào khiến khách hàng chưa đưa Cozy vào danh mục cân nhắc mua sắm?",
         placeholder_charts=("Nguồn chuyển đổi thương hiệu", "Rào cản sản phẩm & Phân phối", ""),
     ),
     QuestionGroup(
         title="Tổng kết & Lộ trình hành động",
         subtitle="Tóm tắt các phát hiện chiến lược cốt lõi và vạch ra lộ trình giải pháp 3 điểm bứt phá cho Cozy.",
-        question="Roadmap 2026: Lộ trình hành động đột phá giúp Cozy giải quyết điểm nghẽn và phát triển thị phần?",
+        question="Lộ trình hành động đột phá giúp Cozy giải quyết điểm nghẽn và phát triển thị phần",
         placeholder_charts=("Lưu đồ lộ trình", "Chiến dịch hành động", ""),
     ),
 )
@@ -94,7 +108,15 @@ def _inject_style() -> None:
                     linear-gradient(180deg, #0b2214 0%, #0c1c12 55%, #06110b 100%) !important;
             }
 
-            section[data-testid="stSidebar"] * {
+            section[data-testid="stSidebar"] h1,
+            section[data-testid="stSidebar"] h2,
+            section[data-testid="stSidebar"] h3,
+            section[data-testid="stSidebar"] h4,
+            section[data-testid="stSidebar"] h5,
+            section[data-testid="stSidebar"] h6,
+            section[data-testid="stSidebar"] p,
+            section[data-testid="stSidebar"] .stMarkdown,
+            section[data-testid="stSidebar"] .stCaption {
                 color: #f0fdf4 !important;
             }
 
@@ -135,6 +157,40 @@ def _inject_style() -> None:
             }
             
             /* --- KẾT THÚC CSS ĐỒNG BỘ NÚT SIDEBAR --- */
+
+            /* --- ĐỒNG BỘ MÀU CHIP BỘ LỌC MULTISELECT VÀ CHECKBOX SANG XANH COZY --- */
+            span[data-baseweb="tag"] {
+                background-color: #156835 !important;
+                color: #ffffff !important;
+                border-radius: 6px !important;
+                border: 1px solid rgba(167, 243, 208, 0.2) !important;
+            }
+            span[data-baseweb="tag"] span {
+                color: #ffffff !important;
+            }
+            span[data-baseweb="tag"] svg {
+                fill: #ffffff !important;
+            }
+            /* Checkbox khi được chọn: đổi sang màu Cam Ấm Áp nổi bật (#ff9f1c) đồng bộ nhãn Trà Đào/Trà Cam Cozy */
+            div[data-testid="stCheckbox"] label div[role="checkbox"][aria-checked="true"],
+            div[data-testid="stCheckbox"] div[role="checkbox"][aria-checked="true"] > div,
+            .stCheckbox [aria-checked="true"] > div,
+            div[role="checkbox"][aria-checked="true"] > div {
+                background-color: #ff9f1c !important;
+                border-color: #ff9f1c !important;
+            }
+            /* Trả lại nền trong suốt và chữ trắng cho nhãn chữ của checkbox */
+            div[data-testid="stCheckbox"] label,
+            div[data-testid="stCheckbox"] label span,
+            div[data-testid="stCheckbox"] label p {
+                background-color: transparent !important;
+                color: #ffffff !important;
+            }
+            /* Hộp selectbox khi active/focus */
+            div[data-baseweb="select"] > div:focus-within {
+                border-color: #156835 !important;
+            }
+            /* --- KẾT THÚC CSS BỘ LỌC --- */
 
             section[data-testid="stSidebar"] div[data-testid="stAlert"] {
                 background: linear-gradient(145deg, rgba(11, 34, 20, 0.75), rgba(21, 104, 53, 0.65)) !important;
@@ -307,7 +363,7 @@ def _render_navigation_sidebar(groups: Iterable[QuestionGroup] = GROUPS) -> None
     st.sidebar.markdown(
         """
         <div style='display: flex; align-items: center; gap: 8px; margin-bottom: 0px;'>
-            <h2 style='margin: 0; color: #ffffff; font-size: 1.6rem;'>🍃 Cozy RTD Tea</h2>
+            <h2 style='margin: 0; color: #ffffff; font-size: 1.6rem;'>Cozy RTD Tea</h2>
         </div>
         """,
         unsafe_allow_html=True,
@@ -332,8 +388,9 @@ def _render_navigation_sidebar(groups: Iterable[QuestionGroup] = GROUPS) -> None
     
     st.sidebar.markdown("---")
     st.sidebar.info(
-        "💡 **Ý nghĩa:** Dashboard được thiết kế chuẩn cấu trúc 5 chuyên đề của một Senior Data Analyst, "
-        "sử dụng bộ nhận diện màu xanh chính `#156835` và xanh phụ `#3b903e` của nhãn Cozy."
+        "💡 **Ý nghĩa:** Hệ thống báo cáo phân tích toàn diện Sức khỏe Thương hiệu Trà Cozy đóng chai (Cozy RTD Tea) "
+        "dựa trên khảo sát 2,600 đáp viên qua các Wave 2024 - 2025, hỗ trợ nhãn hàng hoạch định chiến lược kinh doanh "
+        "và Marketing cho giai đoạn 2025 - 2026."
     )
 
 def _render_group_hero(group: QuestionGroup) -> None:
@@ -352,7 +409,7 @@ def _render_group_hero(group: QuestionGroup) -> None:
 @st.cache_data(show_spinner=False)
 def load_dataset() -> pd.DataFrame:
     """Load, clean, and map ready-to-drink tea brand survey data."""
-    df = pd.read_csv("data_clean/output/Dataset_cleaned.csv", low_memory=False)
+    df = pd.read_csv("data/processed/Dataset_cleaned.csv", low_memory=False)
     
     brand_to_master = {
         'C2': 'C2',
@@ -433,14 +490,18 @@ def load_dataset() -> pd.DataFrame:
 def _render_page_content(selected_idx: int, df: pd.DataFrame) -> None:
     """Render corresponding dashboard page based on selection."""
     if selected_idx == 0:
-        render_tab1(df)
+        render_overview(df)
     elif selected_idx == 1:
-        render_tab2(df)
+        render_tab1(df)
     elif selected_idx == 2:
-        render_tab3(df)
+        render_tab2(df)
     elif selected_idx == 3:
-        render_tab5(df)  # Rào cản sản phẩm (tab5)
+        render_tab3(df)
     elif selected_idx == 4:
+        render_tab6(df)  # Dịp tiêu dùng & Kênh truyền thông (tab6)
+    elif selected_idx == 5:
+        render_tab5(df)  # Rào cản sản phẩm (tab5)
+    elif selected_idx == 6:
         render_tab4(df)  # Tổng kết chiến lược (tab4)
 
 def main() -> None:
@@ -455,7 +516,7 @@ def main() -> None:
         df = load_dataset()
     except Exception as e:
         st.error(f"❌ Không thể đọc tệp dữ liệu sạch: {e}")
-        st.info("Vui lòng đảm bảo tệp dữ liệu sạch đang nằm ở đường dẫn: `data_clean/output/Dataset_cleaned.csv`")
+        st.info("Vui lòng đảm bảo tệp dữ liệu sạch đang nằm ở đường dẫn: `data/processed/Dataset_cleaned.csv`")
         return
         
     # 4. Xác định chuyên đề đang chọn (mặc định là chuyên đề đầu tiên)

@@ -1,5 +1,28 @@
+# macOS system files
 .DS_Store
+**/.DS_Store
+
+# Python
 __pycache__/
-*.pyc
-~
-data_clean/output/Dataset_long_format.csv
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.env
+.venv
+env/
+venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Excel temp files (bắt đầu bằng ~$)
+~$*.xlsx
+~$*.xls
+
+# Data files quá lớn hoặc nhạy cảm (không nên đẩy lên GitHub)
+data/raw/Dataset.csv
+data/processed/Dataset_long_format.csv
+data/processed/column_to_brand_mapping.csv
+data/processed/*.zip
+data/processed/*.tar.gz
