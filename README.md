@@ -3,7 +3,7 @@
 > **End-to-End Analytics Project | Python · Streamlit · Plotly**  
 > Phân tích sức khỏe thương hiệu trà đóng chai (RTD Tea) **Cozy** tại thị trường Việt Nam, dựa trên dữ liệu khảo sát **2,600 đáp viên** toàn quốc (2024–2025).
 
-🌐 **Live Dashboard:** [link]
+🌐 **Live Dashboard:** [cozy-rtd-brand-health.streamlit.app](https://cozy-rtd-brand-health.streamlit.app)
 
 ---
 
