@@ -132,4 +132,4 @@ streamlit run app.py
 
 Dự án cá nhân — thực hiện toàn bộ quy trình: data cleaning, survey logic mapping, EDA, đến xây dựng dashboard tương tác phục vụ ra quyết định thương hiệu.
 
-**Contact:** [LinkedIn](https://linkedin.com/in/hokhongtuyetnhu) · [Email](mailto:ngocdiep.app.mail@gmail.com)
+**Contact:** [LinkedIn](https://linkedin.com/in/hokhongtuyetnhu) · [Email](mailto:hokhongtuyetnhu0807@gmail.com)
